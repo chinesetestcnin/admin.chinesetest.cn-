@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1100">
+    <title>中文考试成绩在线验证结果查询</title>
+    <style>
+        body {
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 20px;
+            color: #000; /* Pura text black */
+        }
+        .container {
+            width: 1080px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .header h2, .header h4 {
+            margin: 5px 0;
+            color: #000;
+        }
+        .header h2 { font-size: 24px; font-weight: 500; }
+        .header h4 { font-size: 15px; font-weight: normal; }
+        
+        .outer-panel {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 15px 25px 25px 25px;
+            background-color: #fff;
+        }
+        .section-label {
+            font-size: 13px;
+            color: #000;
+            margin-bottom: 8px;
+            margin-left: 2px;
+        }
+        .inner-panel {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 22px;
+            overflow: hidden;
+        }
+        .panel-heading {
+            background-color: #fff;
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+            font-size: 14px;
+            color: #000;
+        }
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .table td, .table th {
+            border: 1px solid #ddd;
+            padding: 10px 15px;
+            font-size: 14px;
+            vertical-align: middle;
+            color: #000;
+            /* Yahan se unbold kiya hai */
+            font-weight: normal !important;
+        }
+        .label-bg {
+            background-color: #f9f9f9;
+            width: 320px; 
+            text-align: right;
+            color: #000 !important;
+        }
+        .table th {
+            background-color: #f9f9f9;
+        }
+        .info-sub-header {
+            background-color: #fcfcfc;
+            padding: 8px 15px;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            font-size: 13px;
+            color: #000;
+        }
+        .text-center { text-align: center; }
+        
+        /* Status Green and Unbold */
+        .status-pass { 
+            color: #00a650; 
+            font-weight: normal !important; 
+        }
+
+        .footer-text {
+            text-align: center;
+            font-size: 12px;
+            color: #000; 
+            margin-top: 20px;
+        }
+        img.profile-photo {
+            width: 135px;
+            height: auto;
+            border: 1px solid #ddd;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h2>中文考试成绩在线验证结果查询</h2>
+        <h4>汉考国际教育科技（北京）有限公司（CTI）</h4>
+    </div>
+
+    <div class="outer-panel">
+        <div class="section-label">Information of test taker</div>
+        
+        <div class="inner-panel">
+            <table class="table">
+                <tr>
+                    <td class="label-bg">Name on Certificate</td>
+                    <td>KUMAR RAMBABU</td>
+                    <td rowspan="4" style="width: 160px; border-left: 1px solid #ddd;" class="text-center">
+                        <img src="photo.jpg" alt="Photo" class="profile-photo">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-bg">Chinese Name</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="label-bg">Nationality</td>
+                    <td>印度</td>
+                </tr>
+                <tr>
+                    <td class="label-bg">Gender</td>
+                    <td>男</td>
+                </tr>
+            </table>
+            
+            <div class="info-sub-header">考试信息</div>
+            
+            <table class="table">
+                <tr>
+                    <td class="label-bg">考点名称</td>
+                    <td>新疆师范大学（网考）</td>
+                </tr>
+                <tr>
+                    <td class="label-bg">Ticket No.</td>
+                    <td>H42503899610100005 &nbsp; H82503899610100005</td>
+                </tr>
+                <tr>
+                    <td class="label-bg">证书编号</td>
+                    <td>H42504028729</td>
+                </tr>
+                <tr>
+                    <td class="label-bg">Test Type</td>
+                    <td>HSK四级</td>
+                </tr>
+                <tr>
+                    <td class="label-bg">Test Time</td>
+                    <td>Apr 12, 2025</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="inner-panel">
+            <div class="panel-heading">HSK四级(Apr 12, 2025)中文水平考试</div>
+            <table class="table text-center">
+                <tr>
+                    <th>听力</th>
+                    <th>阅读</th>
+                    <th>写作</th>
+                    <th>Total Score</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>62</td>
+                    <td>58</td>
+                    <td>60</td>
+                    <td>180</td>
+                    <td class="status-pass">合格</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="inner-panel">
+            <div class="panel-heading">HSKK（中级）(Apr 12, 2025)中文水平考试</div>
+            <table class="table text-center">
+                <tr>
+                    <th>口试</th>
+                    <th>Total Score</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>24</td>
+                    <td class="status-pass">合格</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="footer-text">最终解释权归汉考国际所有</div>
+    </div>
+</div>
+
+</body>
+</html>
